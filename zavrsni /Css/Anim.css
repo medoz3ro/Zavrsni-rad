@@ -1,0 +1,35 @@
+ 
+.anim{
+    margin-top: 9%;
+    margin-left: 9%;
+    color: white;    
+    }
+  
+.anim h1{
+    font-size: 3em;
+    line-height: 3.2em;
+    font-weight: 600;
+}
+
+.anim p{
+    max-width: 40em;
+    line-height: 2.8em;
+}
+  
+.slide-l{
+    animation: slidel 2s linear forwards;
+}
+
+@keyframes slidel{
+    0%{
+        transform: translate(3em);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+p.slide-l{
+    animation-delay: 0.5s;
+}

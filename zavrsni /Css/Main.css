@@ -1,0 +1,306 @@
+body{
+    background-image: url(../Slike/stars-1654074.jpg);
+    background-size: 100%;
+    margin: 0em;
+    padding: 0em;
+
+}
+
+
+
+
+/*br*/
+/*Tekst planeta*/
+/*br*/
+
+p{
+    color:white;
+    position: absolute;
+    left: -3.5em;
+    top: -1em;
+}
+
+/*br*/
+/*Linija koja će prikazati put planeta*/
+/*br*/
+
+.mercury-outline,.venus-outline,.earth-outline,.mars-outline,.jupiter-outline,.saturn-outline,.uranus-outline,.neptun-outline{ 
+    border-radius: 50%;
+    border: 0.1em dotted #ddd9;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+/*br*/
+/*Sunce*/
+/*br*/
+
+.sun{
+    height: 12em;
+    width: 12em;
+    background-image: url(../Slike/planeti/sun.png);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -0.4em 0.2em 5.6em #f9c05f;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+/*br*/
+/*Za Merkur sve opcije*/
+/*br*/
+
+.mercury-outline{
+    height: 14em;
+    width: 14em;
+}
+
+.mercury{
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../Slike/planeti/Mercury.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #f9c05f;
+    left: 44%;
+    top: 44%;
+    transform:  translate(-50%, -50%);
+    animation:orbitMer 2s linear infinite;
+}
+
+@keyframes orbitMer{
+    from{transform: rotate(0deg)translateX(7em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(7em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Veneru sve opcije*/
+/*br*/
+
+.venus-outline{
+    height: 20em;
+    width: 20em;
+}
+
+.venus{
+    height: 2em;
+    width: 2em;
+    background-image: url(../Slike/planeti/Venus.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #C1AA81;
+    left: 45.5%;
+    top: 44%;
+    transform:  translate(-50%, -50%);
+    animation:orbitVen 10s linear infinite;
+}
+
+@keyframes orbitVen{
+    from{transform: rotate(0deg)translateX(10.2em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(10.2em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Zemlju sve opcije*/
+/*br*/
+
+.earth-outline{
+    height: 30em;
+    width: 30em;
+}
+
+.earth{
+    height: 2em;
+    width: 2em;
+    background-image: url(../Slike/planeti/earth.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #2855d6;
+    left: 46%;
+    top: 46.5%;
+    transform:  translate(-50%, -50%);
+    animation:orbitEar 20s linear infinite;
+}
+
+@keyframes orbitEar{
+    from{transform: rotate(0deg)translateX(15.1em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(15.1em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Mjesec sve opcije*/
+/*br*/
+
+.moon-outline{
+    height: 3em;
+    width: 3em;
+    border: 0.1em dotted #fff;
+    position: relative;
+    left: -0.55em;
+    top: -0.55em;
+    border-radius: 5em;
+}
+
+.moon{
+    height: 0.5em;
+    width: 0.5em;
+    background-image: url(../Slike/planeti/moon.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    left: 44%;
+    top: 43%;
+    transform:  translate(-50%, -50%);
+    animation:orbitMoo 3s linear infinite;
+}
+
+@keyframes orbitMoo{
+    from{transform: rotate(0deg)translateX(1.56em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(1.56em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Mars sve opcije*/
+/*br*/
+
+.mars-outline{
+    height: 37em;
+    width: 37em;
+}
+
+.mars{
+    height: 1em;
+    width: 1em;
+    background-image: url(../Slike/planeti/Mars.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #fea535;
+    left: 48.35%;
+    top: 48%;
+    transform:  translate(-50%, -50%);
+    animation:orbitMar 30s linear infinite;
+}
+
+@keyframes orbitMar{
+    from{transform: rotate(0deg)translateX(18.66em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(18.66em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za jupiter sve opcije*/
+/*br*/
+
+.jupiter-outline{
+    height: 43em;
+    width: 43em;
+}
+
+.jupiter{
+    height: 5em;
+    width: 5em;
+    background-image: url(../Slike/planeti/Jupiter.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #cac2b9;
+    left: 44.5%;
+    top: 45%;
+    transform:  translate(-50%, -50%);
+    animation:orbitJup 60s linear infinite;
+}
+
+@keyframes orbitJup{
+    from{transform: rotate(0deg)translateX(21.7em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(21.7em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Saturn sve opcije*/
+/*br*/
+
+.saturn-outline{
+    height: 50em;
+    width: 50em;
+}
+
+.saturn{
+    height: 5.5em;
+    width: 5.5em;
+    background-image: url(../Slike/planeti/saturn.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    left: 45%;
+    top: 44%;
+    transform:  translate(-50%, -50%);
+    animation:orbitSat 90s linear infinite;
+}
+
+@keyframes orbitSat{
+    from{transform: rotate(0deg)translateX(25.2em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(25.2em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Uran sve opcije*/
+/*br*/
+
+.uranus-outline{
+    height: 56em;
+    width: 56em;
+}
+
+.uranus{
+    height: 2em;
+    width: 2em;
+    background-image: url(../Slike/planeti/Uranus.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform:  translate(-50%, -50%);
+    animation:orbitUra 200s linear infinite;
+}
+
+@keyframes orbitUra{
+    from{transform: rotate(0deg)translateX(28em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(28em) rotate(-360deg);}
+}
+
+/*br*/
+/*Za Neptun sve opcije*/
+/*br*/
+
+.neptun-outline{
+    height: 62em;
+    width: 62em;
+}
+
+.neptun{
+    height: 2em;
+    width: 2em;
+    background-image: url(../Slike/planeti/Neptune.png);
+    background-size: cover;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -0.4em 0.2em 5.6em #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform:  translate(-50%, -50%);
+    animation:orbitNep 400s linear infinite;
+}
+
+@keyframes orbitNep{
+    from{transform: rotate(0deg)translateX(31em) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(31em) rotate(-360deg);}
+}
